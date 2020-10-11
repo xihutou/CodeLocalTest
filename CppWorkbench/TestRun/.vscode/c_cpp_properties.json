@@ -3,10 +3,11 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "C:/Program Files/Windows Kits/10/Include/10.0.10240.0/ucrt",
-                "C:/Program Files/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.15.26726/atlmfc/include",
-                "C:/Program Files/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.15.26726/include"
+                "C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2017\\BUILDTOOLS\\VC\\TOOLS\\MSVC\\14.15.26726\\INCLUDE",
+                "C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2017\\BUILDTOOLS\\VC\\TOOLS\\MSVC\\14.15.26726\\ATLMFC\\INCLUDE",
+                "C:\\PROGRAM FILES\\WINDOWS KITS\\8.1\\INCLUDE\\UM",
+                "C:\\PROGRAM FILES\\WINDOWS KITS\\8.1\\INCLUDE\\SHARED",
+                "C:\\PROGRAM FILES\\WINDOWS KITS\\8.1\\INCLUDE\\WINRT"
             ],
             "defines": [
                 "_DEBUG",
@@ -16,7 +17,9 @@
             "windowsSdkVersion": "8.1",
             "compilerPath": "C:/Program Files/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.15.26726/bin/Hostx86/x86/cl.exe",
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "intelliSenseMode": "msvc-x86"
         }
     ],
     "version": 4
