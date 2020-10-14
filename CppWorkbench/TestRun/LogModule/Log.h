@@ -3,17 +3,25 @@
 
 #include <ctime>
 #include <iostream>
+#include <string>
 
 using namespace::std;
+
 
 class LogClass
 {
 public:
     LogClass();
     ~LogClass();
-    void PrintCurrentTime();//{std::cout << "LogClass::PrintCurrentTime" << std::endl;}
+    void printCurrentTimeInterval();
+    void logOut();
+
+    const std::string getCurrentTime();
+    const std::string& operator()(const std::string newMsg);
+    const std::string& append(std::string appendMsg);
+    const std::string& operator()() const;
 private:
-    int m_numberor;
+    std::string m_logMsg;
 };
 
 #endif/*__LOG_H__*/
