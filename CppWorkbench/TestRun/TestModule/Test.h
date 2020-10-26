@@ -10,11 +10,6 @@ public:
     TestClass();
     ~TestClass();
 
-    void tstCallConstFunc();
-    void tstCallNonConstFunc();
-
-    const TextBlock tb("Hello.");
-
 };
 
 #endif/*__TEST_H__*/
