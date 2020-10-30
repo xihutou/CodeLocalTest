@@ -11,6 +11,6 @@ public:
     const char& operator[](std::size_t position) const;
     char& operator[](std::size_t position);
 private:
-    std::string m_text;
+    std::string m_strText;
 };
 #endif/*__TEXTBLOCK_H__*/

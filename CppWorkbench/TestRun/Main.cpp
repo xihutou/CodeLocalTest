@@ -3,6 +3,7 @@
 #include "windows.h"
 
 #include "LogModule/Log.h"
+#include "TestModule/Test.h"
 
 int main(void)
 {
@@ -13,5 +14,9 @@ int main(void)
     log.append(" ");
     log.append("This is Main func.");
     std::cout << log() << std::endl;
+
+    TestClass* pTc = new TestClass();
+    pTc->Run();
+
     return 0;
 }

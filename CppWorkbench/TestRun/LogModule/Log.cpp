@@ -1,7 +1,12 @@
 #include "Log.h"
 
-LogClass::LogClass():m_logMsg("")
+LogClass::LogClass():m_strLogMsg("")
 {
+}
+
+LogClass::LogClass(std::string str)
+{
+    m_strLogMsg = str;
 }
 
 LogClass::~LogClass()
@@ -18,7 +23,12 @@ void LogClass::printCurrentTimeInterval()
 
 void LogClass::logOut()
 {
-    std::cout << m_logMsg.c_str() << std::endl;
+    std::cout << m_strLogMsg.c_str() << std::endl;
+}
+
+void LogClass::clearLog()
+{
+    m_strLogMsg.clear();
 }
 
 const std::string LogClass::getCurrentTime()
@@ -36,17 +46,17 @@ const std::string LogClass::getCurrentTime()
 
 const std::string& LogClass::operator()(std::string newMsg)
 {
-    m_logMsg = newMsg;
-    return m_logMsg;
+    m_strLogMsg = newMsg;
+    return m_strLogMsg;
 }
 
-const std::string& LogClass::append(const std::string appendMsg)
+std::string& LogClass::append(const std::string appendMsg)
 {
-    m_logMsg.append(appendMsg);
-    return m_logMsg;
+    m_strLogMsg.append(appendMsg);
+    return m_strLogMsg;
 }
 
 const std::string& LogClass::operator()() const
 {
-    return m_logMsg;
+    return m_strLogMsg;
 }

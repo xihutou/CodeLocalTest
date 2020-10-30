@@ -1,6 +1,6 @@
 #include "TextBlock.h"
 
-TextBlock::TextBlock(std::string initStr):m_text(initStr)
+TextBlock::TextBlock(std::string initStr):m_strText(initStr)
 {
 
 }
@@ -20,5 +20,5 @@ const char& TextBlock::operator[](std::size_t position) const
 
 char& TextBlock::operator[](std::size_t position)
 {
-    return m_text[0];
+    return m_strText[0];
 }

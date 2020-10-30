@@ -3,13 +3,17 @@
 #include <iostream>
 #include <string>
 
-#include "../ClassHolder/TextBlock.h"
+#include "../LogModule/Log.h"
 class TestClass
 {
 public:
     TestClass();
     ~TestClass();
+    void Run();
 
+private:
+    std::string m_strTag;
+    LogClass* m_pLogObj;
 };
 
 #endif/*__TEST_H__*/
